@@ -3,11 +3,15 @@ import Image from "next/image";
 import Banner from "../Components/Banner";
 import Card from "../Components/card";
 import coffeeStorsData from "../data/coffee-stores.json";
+import FetchCoffeeStore from "../lib/coffee-stores";
 import styles from "../styles/Home.module.css";
 
 export async function getStaticProps(context) {
+  
+  const coffeeStors = await FetchCoffeeStore()
+
   return {
-    props: { coffeeStors: coffeeStorsData }, // will be passed to the page component as props
+    props: { coffeeStors }, // will be passed to the page component as props
   };
 }
 
@@ -42,10 +46,13 @@ export default function Home(props) {
             <div className={styles.cardLayout}>
               {props.coffeeStors.map((coffeeStor) => (
                 <Card
-                  key={coffeeStor.id}
+                  key={coffeeStor.fsq_id}
                   name={coffeeStor.name}
-                  imgUrl={coffeeStor.imgUrl}
-                  href={`/coffee-store/${coffeeStor.id}`}
+                  imgUrl={
+                    coffeeStor.imgUrl ||
+                    "https://images.unsplash.com/photo-1469631423273-6995642a6a40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1203&q=80"
+                  }
+                  href={`/coffee-store/${coffeeStor.fsq_id}`}
                   className={styles.card}
                 />
               ))}

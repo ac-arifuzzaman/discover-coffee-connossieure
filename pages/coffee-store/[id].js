@@ -3,26 +3,28 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import coffeeStorsData from "../../data/coffee-stores.json";
+import FetchCoffeeStore from "../../lib/coffee-stores";
 import styles from "../../styles/coffee-store.module.css";
 
 // export function getStaticProps({ params }) {
-export function getStaticProps(staticProps) {
+export async function getStaticProps(staticProps) {
+  const coffeeStores = await FetchCoffeeStore();
   const params = staticProps.params;
   return {
     props: {
-      CoffeeStore: coffeeStorsData.find((CoffeeStore) => {
-        return CoffeeStore.id.toString() === params.id; //dynamic id
+      CoffeeStore: coffeeStores.find((CoffeeStore) => {
+        return CoffeeStore.fsq_id.toString() === params.id; //dynamic id
       }),
     },
   };
 }
 
-export function getStaticPaths() {
-  const paths = coffeeStorsData.map((coffeeStor) => {
+export async function getStaticPaths() {
+  const coffeeStores = await FetchCoffeeStore();
+  const paths = coffeeStores.map((coffeeStor) => {
     return {
       params: {
-        id: coffeeStor.id.toString(),
+        id: coffeeStor.fsq_id.toString(),
       },
     };
   });
@@ -38,7 +40,7 @@ const CoffeeStore = (props) => {
   if (router.isFallback) {
     return <div>Loading...</div>;
   }
-  const { name, address, imgUrl, neighbourhood } = props.CoffeeStore;
+  const { name, location, imgUrl, cross_street, timezone } = props.CoffeeStore;
   const handleUpvoteButton = () => {
     console.log("handle upvote button");
   };
@@ -67,7 +69,10 @@ const CoffeeStore = (props) => {
             <h1 className={styles.name}>{name}</h1>
           </div>
           <Image
-            src={imgUrl}
+            src={
+              imgUrl ||
+              "https://images.unsplash.com/photo-1469631423273-6995642a6a40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1203&q=80"
+            }
             alt={name}
             width="600"
             height="360"
@@ -82,7 +87,7 @@ const CoffeeStore = (props) => {
               height="24"
               alt="locationIcon"
             />
-            <p>{address}</p>
+            <p>{timezone}</p>
           </div>
           <div className="styles iconWrapper">
             <Image
@@ -91,7 +96,7 @@ const CoffeeStore = (props) => {
               height="24"
               alt="locationIcon"
             />
-            <p>{neighbourhood}</p>
+            <p>{location.address}</p>
           </div>
           <div className="styles iconWrapper">
             <Image

@@ -1,0 +1,320 @@
+{
+  "results": [
+    {
+      "fsq_id": "59cd51c71b0ea516e9e7b3aa",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 22,
+      "geocodes": {
+        "main": {
+          "latitude": 43.648777,
+          "longitude": -79.381313
+        },
+        "roof": {
+          "latitude": 43.648777,
+          "longitude": -79.381313
+        }
+      },
+      "link": "/v3/places/59cd51c71b0ea516e9e7b3aa",
+      "location": {
+        "address": "100 King St W",
+        "country": "CA",
+        "cross_street": "Bay St",
+        "formatted_address": "100 King St W (Bay St), Toronto ON M5X",
+        "locality": "Toronto",
+        "postcode": "M5X",
+        "region": "ON"
+      },
+      "name": "Pilot Coffee Roasters",
+      "related_places": {
+        "parent": {
+          "fsq_id": "f927e73f408d458e2c2fcf4b",
+          "name": "Tor-first canadian place"
+        }
+      },
+      "timezone": "America/Toronto"
+    },
+    {
+      "fsq_id": "559a8f5a498e31f945041245",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 98,
+      "geocodes": {
+        "main": {
+          "latitude": 43.64839,
+          "longitude": -79.381999
+        },
+        "roof": {
+          "latitude": 43.64839,
+          "longitude": -79.381999
+        }
+      },
+      "link": "/v3/places/559a8f5a498e31f945041245",
+      "location": {
+        "address": "1 First Canadian Pl",
+        "country": "CA",
+        "cross_street": "btwn Bay & York st",
+        "formatted_address": "1 First Canadian Pl (btwn Bay & York st), Toronto ON M5X 1C1",
+        "locality": "Toronto",
+        "neighborhood": ["Downtown Toronto"],
+        "postcode": "M5X 1C1",
+        "region": "ON"
+      },
+      "name": "Maman",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4d7516ead0c737040cb5f917",
+          "name": "First Canadian Place Food Court"
+        }
+      },
+      "timezone": "America/Toronto"
+    },
+    {
+      "fsq_id": "5bb797b8bf7dde002c2cdbfa",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 99,
+      "geocodes": {
+        "main": {
+          "latitude": 43.64921,
+          "longitude": -79.379979
+        },
+        "roof": {
+          "latitude": 43.64921,
+          "longitude": -79.379979
+        }
+      },
+      "link": "/v3/places/5bb797b8bf7dde002c2cdbfa",
+      "location": {
+        "address": "44 King St W",
+        "country": "CA",
+        "cross_street": "PATH",
+        "formatted_address": "44 King St W (PATH), Toronto ON M5H 1H1",
+        "locality": "Toronto",
+        "postcode": "M5H 1H1",
+        "region": "ON"
+      },
+      "name": "Aroma Espresso Bar",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4c9b9e29b8e9224b7f33583d",
+          "name": "Scotia Plaza"
+        }
+      },
+      "timezone": "America/Toronto"
+    },
+    {
+      "fsq_id": "53bd25f3498edd0cf854e13c",
+      "categories": [
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13032,
+          "name": "Cafes, Coffee, and Tea Houses",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [
+        {
+          "id": "d5719cc0-d890-0132-61d3-7a163eb2a6fc",
+          "name": "Tim Hortons"
+        }
+      ],
+      "distance": 109,
+      "geocodes": {
+        "main": {
+          "latitude": 43.648057,
+          "longitude": -79.381946
+        },
+        "roof": {
+          "latitude": 43.648057,
+          "longitude": -79.381946
+        }
+      },
+      "link": "/v3/places/53bd25f3498edd0cf854e13c",
+      "location": {
+        "address": "77 King St W",
+        "address_extended": "Unit 52c",
+        "country": "CA",
+        "cross_street": "in TD North Tower",
+        "formatted_address": "77 King St W (in TD North Tower), Toronto ON M5K 2A1",
+        "locality": "Toronto",
+        "postcode": "M5K 2A1",
+        "region": "ON"
+      },
+      "name": "Tim Hortons",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4b1e8c10f964a520711b24e3",
+          "name": "TD North Tower"
+        }
+      },
+      "timezone": "America/Toronto"
+    },
+    {
+      "fsq_id": "52138db911d22803b334c641",
+      "categories": [
+        {
+          "id": 13002,
+          "name": "Bakery",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/bakery_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 208,
+      "geocodes": {
+        "main": {
+          "latitude": 43.648709,
+          "longitude": -79.379152
+        },
+        "roof": {
+          "latitude": 43.648709,
+          "longitude": -79.379152
+        }
+      },
+      "link": "/v3/places/52138db911d22803b334c641",
+      "location": {
+        "address": "25 King St W",
+        "country": "CA",
+        "cross_street": "",
+        "formatted_address": "25 King St W, Toronto ON M5L 2A1",
+        "locality": "Toronto",
+        "neighborhood": ["Financial District"],
+        "postcode": "M5L 2A1",
+        "region": "ON"
+      },
+      "name": "Mos Mos Coffee",
+      "related_places": {},
+      "timezone": "America/Toronto"
+    },
+    {
+      "fsq_id": "56d70c2e498e1991afb395e8",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13145,
+          "name": "Fast Food Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/fastfood_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 46,
+      "geocodes": {
+        "main": {
+          "latitude": 43.648756,
+          "longitude": -79.38159
+        },
+        "roof": {
+          "latitude": 43.648756,
+          "longitude": -79.38159
+        }
+      },
+      "link": "/v3/places/56d70c2e498e1991afb395e8",
+      "location": {
+        "address": "130 King St W",
+        "country": "CA",
+        "cross_street": "",
+        "formatted_address": "130 King St W, Toronto ON M5X 2A2",
+        "locality": "Toronto",
+        "neighborhood": ["Financial District"],
+        "postcode": "M5X 2A2",
+        "region": "ON"
+      },
+      "name": "McCafé",
+      "related_places": {},
+      "timezone": "America/Toronto"
+    }
+  ],
+  "context": {
+    "geo_bounds": {
+      "circle": {
+        "center": {
+          "latitude": 43.64876905928266,
+          "longitude": -79.38119960791585
+        },
+        "radius": 600
+      }
+    }
+  }
+}
