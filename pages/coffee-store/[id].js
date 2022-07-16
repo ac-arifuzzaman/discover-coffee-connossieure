@@ -53,7 +53,7 @@ const CoffeeStore = (props) => {
         <div className={styles.col1}>
           <div className={styles.homeLink}>
             <Link href="/">
-              <a>Go Home</a>
+              <a>← Go Home</a>
             </Link>
           </div>
           {/* <Image

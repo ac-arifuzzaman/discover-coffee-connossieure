@@ -3,12 +3,12 @@ import Image from "next/image";
 import Banner from "../Components/Banner";
 import Card from "../Components/card";
 import coffeeStorsData from "../data/coffee-stores.json";
+import useTracLocation from "../hooks/use-trac-location";
 import FetchCoffeeStore from "../lib/coffee-stores";
 import styles from "../styles/Home.module.css";
 
 export async function getStaticProps(context) {
-  
-  const coffeeStors = await FetchCoffeeStore()
+  const coffeeStors = await FetchCoffeeStore();
 
   return {
     props: { coffeeStors }, // will be passed to the page component as props
@@ -16,8 +16,17 @@ export async function getStaticProps(context) {
 }
 
 export default function Home(props) {
-  const bannerBtnClick = () => {
+  const {
+    handleTracLocation,
+    latLong,
+    locationErrorMassage,
+    isFindingLocation,
+  } = useTracLocation();
+  console.log({ latLong, locationErrorMassage });
+
+  const handleBannerBtnClick = () => {
     console.log("hi banner btn");
+    handleTracLocation();
   };
   return (
     <div className={styles.container}>
@@ -29,9 +38,12 @@ export default function Home(props) {
 
       <main className={styles.main}>
         <Banner
-          buttonText="View stores nearby"
-          handleOnClick={bannerBtnClick}
+          buttonText={isFindingLocation ? "Locating..." : "View stores nearby"}
+          handleOnClick={handleBannerBtnClick}
         />
+        {locationErrorMassage && (
+          <p>something went wrong: {locationErrorMassage}</p>
+        )}
         <div className={styles.heroImage}>
           <Image
             src="/Static/hero-image.png"
